@@ -13,7 +13,7 @@ export const profileData: ProfileData = {
   linkedinUrl: "https://www.linkedin.com/in/phaniraj-reddy-60a477357",
   instagramUrl: "https://www.instagram.com/phaniraj.1276?igsh=Y3Q4M29nOXVkdmJy",
   resumeUrl: "https://raw.githubusercontent.com/pandureddypandureddy798-collab/port/main/cv.docx",
-  avatarUrl: "/profile.jpg",
+  avatarUrl: `${import.meta.env.BASE_URL}profile.jpg`,
   heroStats: [
     {
       label: "Production & AI Projects",

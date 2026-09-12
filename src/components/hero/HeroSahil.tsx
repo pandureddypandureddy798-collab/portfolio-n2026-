@@ -91,6 +91,14 @@ export const HeroSahil: React.FC = () => {
                 <img
                   src={profileData.avatarUrl}
                   alt={profileData.name}
+                  loading="eager"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.dataset.triedFallback) {
+                      target.dataset.triedFallback = 'true';
+                      target.src = 'profile.jpg';
+                    }
+                  }}
                   className="w-full h-full object-cover object-[center_16%] group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
